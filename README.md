@@ -2,8 +2,6 @@
 
 A visually stunning AI-powered trading workstation that streams live market data, simulates portfolio trading, and integrates an LLM chat assistant that can analyze positions and execute trades via natural language.
 
-Built entirely by coding agents as a capstone project for an agentic AI coding course.
-
 ## Features
 
 - **Live price streaming** via SSE with green/red flash animations
@@ -39,11 +37,11 @@ docker run -v finally-data:/app/db -p 8000:8000 --env-file .env finally
 
 ## Environment Variables
 
-| Variable | Required | Description |
-|---|---|---|
-| `OPENROUTER_API_KEY` | Yes | OpenRouter API key for AI chat |
-| `MASSIVE_API_KEY` | No | Massive (Polygon.io) key for real market data; omit to use simulator |
-| `LLM_MOCK` | No | Set `true` for deterministic mock LLM responses (testing) |
+| Variable             | Required | Description                                                          |
+| -------------------- | -------- | -------------------------------------------------------------------- |
+| `OPENROUTER_API_KEY` | Yes      | OpenRouter API key for AI chat                                       |
+| `MASSIVE_API_KEY`    | No       | Massive (Polygon.io) key for real market data; omit to use simulator |
+| `LLM_MOCK`           | No       | Set `true` for deterministic mock LLM responses (testing)            |
 
 ## Project Structure
 
